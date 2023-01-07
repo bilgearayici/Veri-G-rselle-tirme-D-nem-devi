@@ -1,0 +1,80 @@
+# Veri Görselleştirme Poster Sunumu
+
+# Kullanılan Kodlar
+
+## İndirilen Paketler
+
+install.packages("tidyverse")
+
+install.packages("readxl")
+
+install.packages("ggplot2")
+
+install.packages("dplyr")
+
+install.packages("corrplot")
+
+library(tidyverse)
+
+library(readxl)
+
+library(ggplot2)
+
+library(dplyr)
+
+library(corrplot)
+
+## 1. Grafik
+
+korelasyon_matris <- cor(student_alcohol_consumption)
+
+korelasyon_matris
+
+data(student_alcohol_consumption)
+
+corr <- round(cor(student_alcohol_consumption), 1)
+
+head(corr[, 1:6])
+
+
+ggcorrplot(corr, hc.order = TRUE, type = "lower",
+           lab = TRUE) +
+
+  scale_x_discrete(labels = c("Final Notu", "Aile İlişkileri","Sağlık","Dışarı Çıkma Zamanı","Günlül Alkol Tüketimi","Haftalık Alkol Tüketimi","Yaş","Devamsızlık")) +
+
+  scale_y_discrete(labels = c("Calışma Süresi","Final Notu","Aile İlişkileri","Sağlık","Dışarı Çıkma Zamanı","Günlül Alkol Tüketimi","Haftalık Alkol Tüketimi","Yaş"))
+
+
+## 2.Grafik
+ggplot(data = student_alcohol_consumption, mapping = aes(x = studytime, y = G3))+
+
+  geom_boxplot()+
+
+  labs(x = "Çalışma Saatleri" , y = "Final Puanları",
+       title = "Öğrencilerin Çalışma Saatlerine Göre Final Puanları")
+
+
+## 3.Grafik
+ggplot(student_alcohol_consumption, aes(x=Dalc, y= absences)) +
+
+  scale_y_continuous(labels = scales::comma)+
+
+  geom_smooth(method=lm, se=FALSE)+
+
+  geom_point() +
+
+  labs(x = "Günlük Alkol Tüketimi" , y = "Devamsızlık",
+       title = "Ögrencilerin Günlük Alkol Tüketimine Göre Devamsızlık Saatleri")
+
+
+## 4. Grafik
+ggplot(data = student_alcohol_consumption, mapping = aes(x = studytime, y = G3))+
+
+  geom_boxplot()+
+
+  labs(x = "Çalışma Saatleri" , y = "Final Puanları",
+       title = "Öğrencilerin Çalışma Saatlerine Göre Final Puanları")+
+
+  scale_x_discrete(labels = c("2 Saatten Az", "2-5 Saat","5-10 Saat","10 Saatten Fazla")
+                  
+           
