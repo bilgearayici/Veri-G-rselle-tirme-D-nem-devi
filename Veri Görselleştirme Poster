@@ -1,0 +1,14 @@
+
+# Veri Görselleştirme Poster Sunumu
+
+# Özet
+Veri görselleştirme dersinde ele alınan bir problemi veya dikkat çekilmek istenilen bir konu hakkında poster hazırlanması ve anlatımının yapılması üzerine bir ödev verilmiştir. Bu konu hakkında bir veri seti bulunacak ardından veri seti hakkında veri görselleştirme yöntemleri kullanılarak bir poster hazırlanacaktır. Çeşitli veri görselleştirme yöntemleri kullanılmalıdır. 
+
+Bu ödevde öğrencilik hayatı konu alınmıştır. Öğrencilere uygulanan bir anket verileri kullanılmıştır. Veri seti dosyada verilmiştir.
+
+Öğrencilere yapılan bu anket çalışmasında dikkat etmek istenilen bazı noktalar postere eklenmiştir. İlk olarak faktörlerin birbirini nasıl etkilediği hakkında bir korelasyon grafiği verilmiştir. Korelasyon grafiğinin yorumu posterde vardır. İlk grafiği ele aldığımızda dikkat çeken bazı noktalar olmuştur. Örneğin dışarı çıkma faktörü ile devamsızlık faktörünün ilişkisiz çıkması beklenmeyen bir sonuçtur. İkinci olarak bilinen bir gerçek olan çalışma süreleri ile final skorlarının birbirini olumlu etkilemesi ele alınmıştır. Posterde bulunan ikinci grafik bu doğruyu desteklemiştir. Üçüncü grafik günlük alkol kullanımının devamsızlığı nasıl etkilediğini incelemiştir. Olumsuz bir etki beklenirken günlük alkol kullanım değeri yüksek olan öğrencilerin az devamsızlık yapmış olması şaşırtıcı bir sonuç olarak tespit edilmiştir ve bu yüzden postere eklenmiştir. Son grafik ise öğrencilerin hocalara sağlık durumunu anlatmaya çalışırken zorlandığı düşünülerek bu çalışmaya eklenmiştir. Günlük çalışma saati 10 saatten yüksek olan öğrencilerin sağlık durumları verilere göre ortalamada seyretmektedir. 
+
+Farklı veri görselleştirme yöntemleri kullanılmış ve RStudio ile hazırlanan 4 grafik Canva sitesi kullanılarak poster haline getirilmiştir. 
+
+Veri dosyası, grafik dosyası ve kodlar ek bir dosya halinde verilecektir.
+
